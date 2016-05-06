@@ -29,9 +29,9 @@ class user extends CI_Controller
             // fails
 			$this->load->view('template/style');
 			$this->load->view('template/header');
-            $this->load->view('user/user_registration_view');
-			$this->load->view('template/navigation');
+            $this->load->view('template/navigation');
 			$this->load->view('template/info');
+			$this->load->view('user/user_registration_view');
 			$this->load->view('template/footer');
         }
         else
@@ -137,9 +137,9 @@ class user extends CI_Controller
 				$check = array('num1'=>$num1, 'num2'=>$num2, 'sum'=>md5($num1+$num2)); //to check bot or human
 				$this->load->view('template/style');
 				$this->load->view('template/header');
-				$this->load->view('user/login', $check); //give the $check['sum'] in the a hidden form with name="check_sum"
 				$this->load->view('template/navigation');
 				$this->load->view('template/info');
+				$this->load->view('user/login', $check); //give the $check['sum'] in the a hidden form with name="check_sum"
 				$this->load->view('template/footer');
 			}
 		}
@@ -164,9 +164,9 @@ class user extends CI_Controller
 				$exist_data = $this->user_model->retUserData($this->session->userdata('Roll number'));
 				$this->load->view('template/style');
 				$this->load->view('template/header');
-				$this->load->view('user/user_load_data', $exist_data); //load same page
 				$this->load->view('template/navigation');
 				$this->load->view('template/info');
+				$this->load->view('user/user_load_data', $exist_data); //load same page
 				$this->load->view('template/footer');
 			}
 			else
@@ -196,9 +196,9 @@ class user extends CI_Controller
 		{
 			$this->load->view('template/style');
 			$this->load->view('template/header');
-			$this->load->view('user/user_home');
 			$this->load->view('template/navigation');
 			$this->load->view('template/info');
+			$this->load->view('user/user_home');
 			$this->load->view('template/footer'); 
 			//retrive user data from DB and display them | college, roll_no, dept, GPA graph, current GPA, current CGPA and "link to calculate GPA, CGPA or update marks DB"
 		}
@@ -231,9 +231,9 @@ class user extends CI_Controller
 				//display the marks up to current sem in table format, with GPA below each table and CGPA at the bottom of page
 				$this->load->view('template/style');
 				$this->load->view('template/header');
-				$this->load->view('user/update_marks');
 				$this->load->view('template/navigation');
 				$this->load->view('template/info');
+				$this->load->view('user/update_marks');
 				$this->load->view('template/footer');
 			}
 			else

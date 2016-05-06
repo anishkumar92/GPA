@@ -1,6 +1,6 @@
 </article>								
 		</main>
-<nav id="left" class="column">
+<nav class = "navbar navbar-left" role = "navigation">
 			<h3>Navigation</h3>
 			<ul>
 				

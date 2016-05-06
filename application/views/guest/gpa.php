@@ -1,6 +1,7 @@
 <html>
 <head>
     <title><?php echo $type; ?></title>
+   
 </head>
 <body>
     <center>
@@ -25,5 +26,7 @@
 	<input type="submit">
 	</form>
 	</center>
+
+
 </body>
 </html>

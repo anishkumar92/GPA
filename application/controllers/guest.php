@@ -13,9 +13,9 @@ class Guest extends CI_Controller {
     {
 		$this->load->view('template/style');
 		$this->load->view('template/header');
-        $this->load->view('guest/index');
-		$this->load->view('template/navigation');
+        $this->load->view('template/navigation');
 		$this->load->view('template/info');
+        $this->load->view('guest/index');
 		$this->load->view('template/footer');
     }
     
@@ -30,9 +30,9 @@ class Guest extends CI_Controller {
         //have to load header template here
 		$this->load->view('template/style');
 		$this->load->view('template/header');
-        $this->load->view('guest/gpa', $data);
-		$this->load->view('template/navigation');
+        $this->load->view('template/navigation');
 		$this->load->view('template/info');
+        $this->load->view('guest/gpa', $data);
 		$this->load->view('template/footer');
         //have to load footer template here 
     }
@@ -59,9 +59,9 @@ class Guest extends CI_Controller {
         $data['type'] = $type;
 		$this->load->view('template/style');
 		$this->load->view('template/header');
-        $this->load->view('guest/table', $data);
-		$this->load->view('template/navigation');
+        $this->load->view('template/navigation');
 		$this->load->view('template/info');
+        $this->load->view('guest/table', $data);
 		$this->load->view('template/footer');
 		//table.php is common for gpa and cgpa
         //use a hidden form in table.php which can store the credit list so that it can
@@ -87,9 +87,9 @@ class Guest extends CI_Controller {
         $data['type'] = $all_values['type'];
 		$this->load->view('template/style');
 		$this->load->view('template/header');
-        $this->load->view('guest/result', $data);
-		$this->load->view('template/navigation');
+        $this->load->view('template/navigation');
 		$this->load->view('template/info');
+        $this->load->view('guest/result', $data);
 		$this->load->view('template/footer');
     }
     

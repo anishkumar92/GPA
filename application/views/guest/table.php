@@ -1,6 +1,7 @@
 <html>
 <head>
     <title><?php echo $type; ?></title>
+   
 </head>
 <body>
     <center>
@@ -10,5 +11,7 @@
         <?php echo '<input type="hidden" name ="type" value="'.$type.'">'; ?>
         <?php echo '<input type="submit" value="Get my '.$type.'"></form>'; ?>
     </center>
+
+
 </body>
 </html>
